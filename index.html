@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+    (function (window, document, dataLayerName, containerID) {
+        window[dataLayerName] = window[dataLayerName] || [];
+        window[dataLayerName].push({ 'start': new Date().getTime(), event: 'actm-js' });
+        var firstScript = document.getElementsByTagName('script')[0];
+        var script = document.createElement('script');
+        var dl = dataLayerName !== 'acDataLayer' ? '&l=' + dataLayerName : '';
+        script.async = true;
+        script.src = 'https://pxl.polina-zakaryan.dev.altkraft.com/actm/js/actm.js?id=' + containerID + dl;
+        script.type = 'module';
+        if (firstScript && firstScript.parentNode) {
+            firstScript.parentNode.insertBefore(script, firstScript);
+        }
+    }(window, document, 'acDataLayer', 'ATM-fCfbNXxhbADex2Xf'));
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKTM</title>
+</head>
+<body>
+    <p id="unique_id">Hey</p>
+    <p><a href="page_1.html">Ссылка</a></p>
+
+ <form action="handler.php">
+  <p><b>Как по вашему мнению расшифровывается аббревиатура &quot;ОС&quot;?</b></p>
+  <p><input type="radio" name="answer" value="a1">Офицерский состав<Br>
+  <input type="radio" name="answer" value="a2">Операционная система<Br>
+  <input type="radio" name="answer" value="a3">Большой полосатый мух</p>
+  <p><input type="submit"></p>
+ </form>
+
+    <section class="step" id="step1">
+                <h3 class="step__title">1. Создать новый запрос</h3>
+                <div class="step__wrapper">
+                    <p class="step__content">
+                        После запуска программы “Postman” в левом верхнему углу экрана вы увидите кнопку <span
+                            class="new">NEW</span>.</p>
+                    <p class="step__content">
+                        <img src="./img/2_start.png" alt="Кнопка NEW находится в левом верхнем углу">
+                    </p>
+                    <p class="step__content">
+                        Нажмите на нее и в открывшемся окне выберите <b><i>Request</i></b>, или Запрос.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/3_new.png" alt="Создать Запрос">
+                    </p>
+                    <p class="step__content"> Далее Postman предложит указать имя запроса. Здесь все остается на
+                        ваше усмотрение. Мы же пока назовем его import_profile.
+                    </p>
+                    <p class="step__content"> Спустившись чуть ниже, мы обнаружим поле<i> Request Description</i>, или
+                        Описание запроса. Дайте краткое описание запроса. Это сделает жизнь людей, которые работают с
+                        вами в одной команде, проще. В противном случае, оставьте его пустым.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/4_request_name_2.png" alt="Дать имя новому запросу">
+                    </p>
+                    <p class="step__content"> Последнее поле в данном окне — это выбор коллекции. Коллекции создаются,
+                        если вам нужно часто повторять одни и те же запросы с определенными параметрами. Если у вас еще
+                        не создана подходящая коллекция, то сейчас самое время создать ее.
+                    </p>
+                    <p class="step__content"> Нажмите <i>Create Collection</i> (Создать коллекцию), введите название
+                        коллекции, например, “Profiles”. Можно также указать папку, в которую хотите сохранить запрос.
+                        После этого нажмите галочку или Enter.
+                    </p>
+                    <p class="step__content"> Кликните на кнопку <i>Save to Profiles</i>. Так
+                        вы сохраните свой запрос в данной коллекции.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/gif/request_name_collection.gif" alt="Создание коллекции">
+                    </p>
+                    <p class="step__content"> Итак, мы создали запрос. Теперь необходимо его настроить.
+                    </p>
+                </div>
+            </section>
+
+            <section class="step test" id="step2">
+                <h3 class="step__title">2. Указать метод и URL-адрес</h3>
+                <div class="step__wrapper">
+                    <p class="step__content">
+
+                    </p>
+                    <p class="step__content">
+                        Для начала укажем метод запроса. Кликните на кнопку <b>GET</b> и в
+                        выпадающем списке выберите необходимый метод. В нашем случае это — <b>POST</b>.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/gif/method.gif" alt="Выбор метода POST в выпадающем списке">
+                    </p>
+                    <p class="step__content">
+                        В центральном поле с текстом <i>“Enter request URL”</i> вам надо указать адрес API, на который
+                        вы хотите послать запрос. <br> Укажем: <i>https://ru.altkraft.com/api/v1.1/profiles/import</i>.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/8_post_url.png" alt="Указываем API URL">
+                    </p>
+                    <p class="step__content">
+                        Спускаемся в панель ниже.
+                    </p>
+                </div>
+            </section>
+
+        <section class="step test" id="step3">
+                <h3 class="step__title">2. Указать метод и URL-адрес</h3>
+                <div class="step__wrapper">
+                    <p class="step__content">
+
+                    </p>
+                    <p class="step__content">
+                        Для начала укажем метод запроса. Кликните на кнопку <b>GET</b> и в
+                        выпадающем списке выберите необходимый метод. В нашем случае это — <b>POST</b>.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/gif/method.gif" alt="Выбор метода POST в выпадающем списке">
+                    </p>
+                    <p class="step__content">
+                        В центральном поле с текстом <i>“Enter request URL”</i> вам надо указать адрес API, на который
+                        вы хотите послать запрос. <br> Укажем: <i>https://ru.altkraft.com/api/v1.1/profiles/import</i>.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/8_post_url.png" alt="Указываем API URL">
+                    </p>
+                    <p class="step__content">
+                        Спускаемся в панель ниже.
+                    </p>
+                </div>
+            </section>
+
+    
+</body>
+</html>
